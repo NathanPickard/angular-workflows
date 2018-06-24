@@ -8,11 +8,11 @@ import { ApiService } from '../core/services/api.service';
   templateUrl: './hacker-detail.component.html',
   styleUrls: ['./hacker-detail.component.scss']
 })
-export class HackerDetailComponent {
+export class HackerDetailComponent implements OnInit {
   @Input() id: string;
   hacker: Hacker;
 
-  constructor(private api: ApiService, private route: ActivatedRoute) { }
+  constructor(private api: ApiService, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.params.subscribe(params => {
