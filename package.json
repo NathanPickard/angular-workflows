@@ -27,6 +27,7 @@
     "@angular/router": "^6.0.3",
     "chart.js": "^2.7.2",
     "core-js": "^2.5.4",
+    "ng-components-npickard": "0.0.1",
     "rxjs": "^6.0.0",
     "semantic-ui-card": "^2.3.1",
     "semantic-ui-input": "^2.3.1",

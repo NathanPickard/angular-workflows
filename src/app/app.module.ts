@@ -16,6 +16,8 @@ import { NonNumericDirective } from './core/directives/non-numeric.directive';
 import { HackerDetailComponent } from './hacker-detail/hacker-detail.component';
 import { HackerSearchComponent } from './hacker-search/hacker-search.component';
 
+import { NgComponentsNpickardModule } from 'ng-components-npickard';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +30,14 @@ import { HackerSearchComponent } from './hacker-search/hacker-search.component';
     HackerDetailComponent,
     HackerSearchComponent
   ],
-  imports: [BrowserModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    NgComponentsNpickardModule
+  ],
   providers: [ApiService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
